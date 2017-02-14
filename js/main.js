@@ -6,7 +6,8 @@ $(document).ready(function () {
         $("#quote").html(a[0].content);
         $("#footer").html(a[0].title);
         $.ajaxSetup({
-            cache : false
+            cache : false,
+            origin : "https://pachj.github.io/random-quote-machine/"
         });
     });
 
@@ -15,7 +16,8 @@ $(document).ready(function () {
             $("#quote").html(a[0].content);
             $("#footer").html(a[0].title);
             $.ajaxSetup({
-                cache : false
+                cache : false,
+                origin : "https://pachj.github.io/random-quote-machine/"
             });
         });
     });
