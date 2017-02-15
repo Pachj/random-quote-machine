@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>RandomQuoteMachine</title>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -9,24 +10,31 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="js/main.js"></script>
- <!--   <script src="../../Library/Preferences/WebStorm2016.3/javascript/extLibs/http_code.jquery.com_jquery-2.0.0.js"></script> -->
+    <!--   <script src="../../Library/Preferences/WebStorm2016.3/javascript/extLibs/http_code.jquery.com_jquery-2.0.0.js"></script> -->
 
 </head>
 <body>
 <div class="container-fluid">
-    <div class="" id="action-box">
-        <div class="row">
-            <blockquote>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p class="text-center" id="quote"></p>
-                <i class="fa fa-quote-right"  aria-hidden="true" style="float: right"></i>
-                <footer id="author"></footer>
-            </blockquote>
-        </div>
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2" id="action-box">
+            <div class="row">
+                <blockquote class="col-xs-12">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="" id="quote"></p>
+                    <i class="fa fa-quote-right" aria-hidden="true" style="float: right"></i>
+                    <footer id="author"></footer>
+                </blockquote>
+            </div>
 
-        <div class="row text-center" id="buttons">
-            <button class="col-xs-2 col-xs-offset-4" id="new-quote"><i class="fa fa-repeat"></i></button>
-            <button class="col-xs-2" id="tweet"><i class="fa fa-twitter"></i></button>
+            <div class="row" id="buttons">
+                <div class="col-xs-2 col-xs-offset-4 text-center">
+                    <button class="" id="new-quote"><i class="fa fa-repeat"></i></button>
+                </div>
+                <div class="col-xs-2 text-center">
+                    <button class="" id="tweet"><i class="fa fa-twitter"></i></button>
+                </div>
+            </div>
+            <div class="text-center" id="footer">by Henry Jörg</div>
         </div>
     </div>
 </div>

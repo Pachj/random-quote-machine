@@ -1,9 +1,5 @@
 :root {
-    --dot-color : #09b2cb;
-}
-
-html {
-    font-size: 10px;
+    --dot-color: #09b2cb;
 }
 
 body {
@@ -16,48 +12,44 @@ body {
 
     font-family: 'Inconsolata', monospace;
     color: white;
-
+    font-size: 10px;
 }
 
 #action-box {
     background-color: #09b2cb;
-    width: 80%;
-    margin-top: 6em;
-    margin-left: 10%;
     border-radius: 30px;
-    padding: 1em;
+    padding: 2em;
+    padding-bottom: 1em;
+    margin-top: 8.33333333%;
 }
 
-@media screen and (min-width: 768px) {
-    #action-box {
-        width: 60%;
-        margin-left: 20%;
-    }
+.fa-quote-left {
+    font-size: 0.6em;
 }
 
-.fa-quote-left{
-    font-size: 60%;
-}
-
-.fa-quote-right{
-    font-size: 60%;
+.fa-quote-right {
+    font-size: 0.6em;
 }
 
 blockquote {
     border-style: none;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 blockquote footer {
     color: white;
-    padding-top: 6%;
+    padding-top: 0.6em;
+}
+
+#buttons {
+ margin-bottom: 20px;
 }
 
 button {
     background: none;
     border-style: none;
     outline: none;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 button:hover {
