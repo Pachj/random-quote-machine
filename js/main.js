@@ -14,11 +14,15 @@ $(document).ready(function () {
         getRandomColor();
     });
 
+    $("#tweet").click(function () {
+        tweetQuote();
+    });
+
     function getQuote() {
         $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function (quote) {
-            if ((quote[0].content.length + quote[0].title.length) < 140) {
+            if ((quote[0].content.length + quote[0].title.length) <= 140) {
                 $("#quote").html(quote[0].content);
-                $("#footer").html(quote[0].title);
+                $("#author").html(quote[0].title);
             }
             else {
                 getQuote();
@@ -31,6 +35,11 @@ $(document).ready(function () {
         var rand = colors[Math.floor(Math.random() * colors.length)];
         $("#action-box").css("background-color", rand);
         document.body.style.setProperty('--dot-color', rand);
+    }
+    
+    function tweetQuote() {
+        window.open("https://twitter.com/intent/tweet?text=" +
+                    $("#quote").text() + " " + $("#author").text());
     }
 });
 
